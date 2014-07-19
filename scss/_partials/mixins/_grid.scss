@@ -1,0 +1,56 @@
+// Grid system -----------------------
+// -----------------------------------
+
+// Generate semantic grid columns with these mixins.
+
+// Centered Container Element --------
+// -----------------------------------
+@mixin container-fixed($gutter: $grid-gutter-width) {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left:  ($gutter / 2);
+	padding-right: ($gutter / 2);
+	@include clearfix();
+}
+
+// Wrapper for Columns		  --------
+// -----------------------------------
+@mixin make-row($gutter: $grid-gutter-width) {
+	margin-left:  ($gutter / -2);
+	margin-right: ($gutter / -2);
+	@include clearfix();
+}
+
+// Padding end of Main Content -------
+// -----------------------------------
+@mixin content($padding: $bottom-padding) {
+	padding-bottom: $padding;
+	@include clearfix();
+}
+
+// Sections					  --------
+// -----------------------------------
+@mixin sections($padding: $bottom-padding) {
+	margin-bottom: $padding;
+	@include clearfix();
+}
+
+// Seperator for Rows Margin  --------
+// -----------------------------------
+@mixin row($margin: $bottom-row-margin) {
+	margin-bottom: $margin;
+	@include clearfix();
+}
+
+// Seperator for Rows Padding --------
+// -----------------------------------
+@mixin row-padding($padding: $bottom-row-padding) {
+	padding-bottom: $padding;
+	@include clearfix();
+}
+
+@mixin make-row($gutter: $grid-gutter-width) {
+	margin-left:  ($gutter / -2);
+	margin-right: ($gutter / -2);
+	@include clearfix();
+}

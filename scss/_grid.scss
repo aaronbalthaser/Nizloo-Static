@@ -1,0 +1,161 @@
+// Grid ------------------------------
+// -----------------------------------
+ 
+$landscape: 480px;
+$beyond: 640px;
+$tablets: 768px;
+$desktop: 960px;
+$big: 1220px;
+$giant: 1420px;
+
+$susy: (
+	columns: 12,
+	gutters: 1/4,
+	math: fluid,
+	output: float,
+	gutter-position: after,
+	global-box-sizing: border-box,
+);
+ 
+.wrapper {
+    @include container(1080px);
+    padding: 0 15px;
+}
+
+#content {
+	@include content();
+	@include clearfix();
+}
+
+.section {
+	@include sections();
+}
+
+.row {
+	@include row();
+}
+
+// Base Columns
+// -------------------------
+
+// Right Sidebar
+@include breakpoint($desktop) {
+	
+	#main {
+		@include span(8);
+	}
+	
+	#sidebar {
+		@include span(4 at 9);
+	}
+}
+
+// Left Sidebar ====================== Doesn't work
+@include breakpoint($desktop) {
+	
+	#sidebar-lft {
+		@include span(4); 
+	}
+	
+	#main-lft {
+		@include span(8 at 5);
+	}	
+}
+
+// Columns 2
+@include respond-to(tablets) {
+	
+	.col-2 {
+		
+		.col {
+			@include span(6);
+		}
+		
+		.col:last-child {
+			margin-right: 0px;
+		}
+	}
+}
+
+// Columns 3
+@include respond-to(tablets) {
+	
+	.col-3 {
+		
+		.col {
+			@include span(4);
+		}
+		
+		.col:last-child {
+			margin-right: 0px;
+		}
+	}
+}
+
+// Gallery (4 col)
+.gal-col-4 .div {
+	@include gallery(6 of 12);
+	
+	@include breakpoint($beyond) {
+		@include gallery(3 of 12);
+	}
+}
+
+
+
+
+
+
+
+// Delete ==================
+.a {
+	background: red;
+}
+
+.b {
+	background: blue;
+}
+
+.c {
+	background: green;
+}
+
+.d {
+	background: aqua;
+}
+
+.col {
+	@include clearfix();
+}
+// delete ==================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+** Added p:last-child: margin-bottom: 0; to base
+
+1. Add 2 Col
+
+2. Change helpers and remove pull from right and left
+
+3. Get the mixins squared away in helpers

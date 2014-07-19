@@ -1,0 +1,161 @@
+(max-width: 479px)
+/* max 479 */
+@include respond-to(handhelds) {
+
+}		/* ============= HERE ============= */
+
+(min-width: 480px)
+/* min 480 */
+@include respond-to(landscape) {
+
+}		/* ============= HERE ============= */
+
+(min-width: 768px)
+/* min 768 */
+@include respond-to(tablets) {
+
+}		/* ============= HERE ============= */
+
+(min-width: 960px)
+/* min 960 */
+@include respond-to(desktop) {
+
+}		/* ============= HERE ============= */
+
+(min-width: 1220px)
+/* min 1220 */
+@include respond-to(big) {
+
+}		/* ============= HERE ============= */
+
+(min-width: 1420px)
+/* min 1420 */
+@include respond-to(giant) {
+
+}		/* ============= HERE ============= */
+
+***************************************
+
+@media (min-width: 350px) {
+	
+}		/* ============= HERE ============= */
+
+
+
+=============== Columns ===============
+=======================================
+
+// No Settings:
+@include span(8 of 12);
+@include span(4 at 9 of 12);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=======================================
+=======================================
+= SASS Method - must use:
+
+@include breakpoint($landscape) { }
+
+= Min Width =========================== 
+=======================================
+
+$high-tide: 500px;
+
+.reagan {
+	@include breakpoint($high-tide) {
+		content: 'High tide';
+	}
+}
+
+@media (min-width: 500px) {
+	.reagan {
+		content: 'High tide';
+	}
+}
+
+= Min & Max Width =====================
+=======================================
+
+$ex-presidents: 600px 800px;
+
+.nixon {
+	@include breakpoint($ex-presidents) {
+		content: 'Ex-Presidents';
+	}
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+	.nixon {
+	 	content: 'Ex-Presidents';
+	}
+}
+
+= Max =================================
+=======================================
+
+$surfboard-width: max-width 1000px;
+
+.johnson {
+	@include breakpoint($surfboard-width) {
+	 	content: 'Surfboard Width';
+	}
+}
+
+@media (max-width: 1000px) {
+	.johnson {
+	 	content: 'Surfboard Width';
+	}
+}
+
+= Min & Orientation ===================
+=======================================
+
+$surfboard-height: (min-height 1000px) (orientation portrait);
+
+.carter {
+	@include breakpoint($surfboard-height) {
+	 	content: 'Surfboard Height, Portrait';
+	}
+}
+
+@media (min-height: 1000px) and (orientation: portrait) {
+	.carter {
+	 	content: 'Surfboard Height, Portrait';
+	}
+}
+
+
+
+
+
+

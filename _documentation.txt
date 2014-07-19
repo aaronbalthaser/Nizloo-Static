@@ -1,0 +1,36 @@
+// ===== Grid
+
+/* ----- 1.
+	
+	Class:
+		- .content  
+	
+	// Creates the padding between the Main Content and Footer. 
+	// Default setting is 50px and can be edited in variables.
+	// Or by passing an argument in px seen below:
+	
+	.whatever-class-or-id {
+		@include content(200px);
+	}	
+	
+----- */
+
+/* ----- 2.
+	
+	
+----- */
+
+/* ----- 3.
+	
+	
+----- */
+
+/* ----- 4.
+	
+	
+----- */
+
+/* ----- 5.
+	
+	
+----- */

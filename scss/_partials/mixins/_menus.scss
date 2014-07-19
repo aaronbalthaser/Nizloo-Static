@@ -1,0 +1,18 @@
+// Menus -----------------------------
+// -----------------------------------
+
+@mixin menu-horizontal() {
+	
+	ul {
+	    float: left;
+	    width: 100%;
+	    padding: 0;
+	    margin-bottom: 0;
+	    list-style: none;
+	}
+	
+	li {
+	    display: inline;
+	    padding-right: 1.5em;
+	}
+}

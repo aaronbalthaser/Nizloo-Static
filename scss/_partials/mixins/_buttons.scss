@@ -1,0 +1,80 @@
+// Buttons ---------------------------
+// -----------------------------------
+
+//***** Default Properties 
+
+// Button Theme 		  ------------
+$btn-dft-color: #dedede !default;
+$btn-dft-background: #528bb9 !default;
+$btn-dft-border: #528bb9 !default;
+
+// Button Dimensions	  ------------
+$btn-dft-padding-vertical: 8px !default;
+$btn-dft-padding-horizontal: 40px !default;
+$btn-dft-font-size: 14px !default;
+$btn-dft-line-height: 1.5 !default;
+$btn-dft-border-radius: 6px !default;
+
+//***** End Default Properties
+
+// Button Generator
+// -------------------------
+
+// Button Creation
+@mixin button($btn-color: $btn-dft-color, $btn-background: $btn-dft-background, $btn-border: $btn-dft-border) {
+	color: $btn-color;
+	background-color: $btn-background;
+	border-color: $btn-border;
+	
+	&:hover,
+	&:focus,
+	&:active,
+	&.active,
+	.open > &.dropdown-toggle {
+		color: $btn-color;
+		background-color: darken($btn-background, 10%);
+	    border-color: darken($btn-border, 12%);
+	}
+	
+	&:active,
+	&.active,
+	.open > &.dropdown-toggle {
+		background-image: none;
+	}
+	
+	&.disabled,
+	&[disabled],
+	fieldset[disabled] & {
+		&,
+		&:hover,
+		&:focus,
+		&:active,
+		&.active {
+			background-color: $btn-background;
+			border-color: $btn-border;
+		}
+	}
+	
+	.badge {
+		color: $btn-background;
+		background-color: $btn-color;
+	}
+	
+	@include button-size();
+}
+
+// Button Size
+@mixin button-size($btn-padding-vertical: $btn-dft-padding-vertical, $btn-padding-horizontal: $btn-dft-padding-horizontal, $btn-font-size: $btn-dft-font-size, $btn-line-height: $btn-dft-line-height, $btn-border-radius: $btn-dft-border-radius) {
+	padding: $btn-padding-vertical $btn-padding-horizontal;
+	font-size: $btn-font-size;
+	line-height: $btn-line-height;
+	border-radius: $btn-border-radius;
+}
+
+// Button Fluid
+@mixin button-fluid() {
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+

@@ -1,0 +1,9 @@
+1: Figure out a best practice for loading fonts
+2: Add sticky footer
+3. Make HTML & CSS snippits
+4. In components "responsive utilities" there is a bug that God willing you can learn about and use the js fix.
+
+
+
+
+** Make section-title

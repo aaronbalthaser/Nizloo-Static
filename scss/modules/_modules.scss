@@ -1,0 +1,11 @@
+// Modules ---------------------------
+// -----------------------------------
+
+/**
+ * A module is a reusable component on a page, button, widget, callout, banner, etc. Usually modules sit inside layout components but they can also exist withing other modules. However it is good practice to design each module component as a stand alone component so you can rearrange or move them with effecting the layout. Since modules are reusable always use class names.
+ *
+ */
+
+@import "components/components";
+@import "sections/sections";
+@import "widgets/widgets";

@@ -1,0 +1,46 @@
+// Layout ----------------------------
+// -----------------------------------
+
+/**
+ * The layout refers to how you position various elements on the page. We can categorize these elements into major and minor components. Minor elements such as forms, buttons, and navigation menues are contained within major components. The major components are called layout styles and they represent the big blocks of information such as header, footer or sidebar. Normally the major components only appeare once in a page, therefor it is a good practice to use id's.
+ * 
+ * The exception for using classes is seen below when you might have a reason to use the same version of the page with either a fixed of fluid version || or if there is multiple versions for the layout. Keep these classes very general so they can be reused anywhere on the site.
+ *
+ * Use "l" as a prefix for (layout).
+ *
+ */
+
+#header {
+	@include clearfix();
+	background: purple;
+}
+
+#navigation {
+	@include clearfix();
+	background: green;
+}
+
+#main {
+	@include clearfix();
+	background: yellow;
+}
+
+#main-lft {
+	@include clearfix();
+	background: yellow;
+}
+
+#sidebar {
+	@include clearfix();
+	background: orange;
+}
+
+#sidebar-lft {
+	@include clearfix();
+	background: orange;
+}
+
+#footer {
+	@include clearfix();
+	background: blue;
+}

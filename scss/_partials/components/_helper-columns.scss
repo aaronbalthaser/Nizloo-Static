@@ -1,0 +1,106 @@
+// Helper Columns --------------------
+// -----------------------------------
+
+.one-half, 
+.one-third, 
+.two-third, 
+.one-fourth, 
+.three-fourth, 
+.one-fifth, 
+.two-fifth, 
+.three-fifth, 
+.four-fifth {
+	position: relative;
+	float: none;
+	margin-bottom: 20px;
+}
+
+.one-half { width: 100%; }
+.one-third { width: 100%; }
+.two-third  { width: 100%; }
+.one-fourth { width: 100%; }
+.three-fourth { width: 100%; }
+.one-fifth { width: 100%; }
+.two-fifth { width: 100%; }
+.three-fifth { width: 100%; }
+.four-fifth { width: 100%; }
+	
+.last {
+	clear: right;
+	margin-right: 0 !important;
+}
+
+// Media Breakpoint
+// -------------------------
+
+@include respond-to(tablets) {
+	
+	.one-half, 
+	.one-third, 
+	.two-third, 
+	.one-fourth, 
+	.three-fourth, 
+	.one-fifth, 
+	.two-fifth, 
+	.three-fifth, 
+	.four-fifth {
+		position: relative;
+		float: left;
+		margin-right: 4%;
+		margin-bottom: 0;
+	}
+	
+	.one-half { width: 48%; }
+	.one-third { width: 30.6667%; }
+	.two-third  { width: 65.3332%; }
+	.one-fourth { width: 22%; }
+	.three-fourth { width: 74%; }
+	.one-fifth { width: 16.8%; }
+	.two-fifth { width: 37.6%; }
+	.three-fifth { width: 58.4%; }
+	.four-fifth { width: 79.2%; }
+		
+	.last {
+		clear: right;
+		margin-right: 0 !important;
+	}
+}
+
+// Margin Resets
+// -------------------------
+
+@media (max-width: 767px) {
+
+	.section-wrap .container > .one-half, 
+	.section-wrap .container > .one-third, 
+	.section-wrap .container > .two-third, 
+	.section-wrap .container > .one-fourth, 
+	.section-wrap .container > .three-fourth, 
+	.section-wrap .container > .one-fifth, 
+	.section-wrap .container > .two-fifth-fifth, 
+	.section-wrap .container > .three-fifth, 
+	.section-wrap .container > .four-fifth { 
+		margin-bottom: 55px;
+    }
+
+	.section-wrap .container > .one-half.last, 
+	.section-wrap .container > .one-third.last, 
+	.section-wrap .container > .one-fourth.last, 
+	.section-wrap .container > .three-fourth.last, 
+	.section-wrap .container > .one-fifth.last, 
+	.section-wrap .container > .two-fifth-fifth.last, 
+	.section-wrap .container > .two-third.last,
+	.section-wrap .container > .three-fifth.last, 
+	.section-wrap .container > .four-fifth.last, 
+	.section-wrap .container > .one-half:last-child, 
+	.section-wrap .container > .one-third:last-child, 
+	.section-wrap .container > .one-fourth:last-child, 
+	.section-wrap .container > .three-fourth:last-child, 
+	.section-wrap .container > .one-fifth:last-child, 
+	.section-wrap .container > .two-fifth-fifth:last-child, 
+	.section-wrap .container > .three-fifth:last-child, 
+	.section-wrap .container > .four-fifth:last-child { 
+		margin-bottom: 0; 
+	}
+}
+
