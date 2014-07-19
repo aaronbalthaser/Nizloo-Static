@@ -28,7 +28,7 @@ $susy: (
 }
 
 .section {
-	@include sections();
+	@include section();
 }
 
 .row {

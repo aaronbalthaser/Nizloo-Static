@@ -75,6 +75,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 25, ../scss/_grid.scss */
 #content {
+  padding-top: 20px;
   padding-bottom: 55px; }
   /* line 5, ../scss/_partials/mixins/_clearfix.scss */
   #content:before, #content:after {

@@ -1,61 +1,140 @@
 <!doctype html>
-<html lang="en">
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+
 <head>
-	<meta charset="UTF-8" />
-	<title>Boilerplate</title>
-	<link rel="stylesheet" href="css/main.css" />
+	<meta charset="utf-8">
+	<title>320 and Up | The &#8216;tiny screen first&#8217; responsive boilerplate</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- http://t.co/dKP3o1e -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	
+	<!-- For all browsers -->
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main.css">
+	
+	<!--[if (lt IE 9) & (!IEMobile)]>
+	<script src="js/libs/selectivizr-min.js"></script>
+	<![endif]-->
+	
+	<!-- JavaScript -->
+	<script src="js/modernizr.js"></script>
+	
+	<!-- Icons -->
+	
+	<!-- 16x16 -->
+	<link rel="shortcut icon" href="/favicon.ico">
+	<!-- 32x32 -->
+	<link rel="shortcut icon" href="/favicon.png">
+	<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+	<!-- <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png"> -->
+	<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+	<!-- <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png"> -->
+	<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+	<!-- <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png"> -->
+	<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+	<!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png"> -->
+	
+	<!--iOS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="apple-mobile-web-app-title" content="320 and Up"> -->
+	<!-- <meta name="viewport" content="initial-scale=1.0"> (Use if apple-mobile-web-app-capable below is set to yes) -->
+	<!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+	<!-- <meta name="apple-mobile-web-app-status-bar-style" content="black"> -->
+	
+	<!-- Startup images -->
+	
+	<!-- iPhone 3GS, pre-2011 iPod Touch -->
+	<!-- <link rel="apple-touch-startup-image" href="img/startup/startup-320x460.png" media="screen and (max-device-width:320px)"> -->
+	<!-- iPhone 4, 4S and 2011 iPod Touch-->
+	<!-- <link rel="apple-touch-startup-image" href="img/startup/startup-640x920.png" media="(max-device-width:480px) and (-webkit-min-device-pixel-ratio:2)"> -->
+	<!-- iPhone 5 and 2012 iPod Touch -->
+	<!-- <link rel="apple-touch-startup-image" href="img/startup/startup-640x1096.png" media="(max-device-width:548px) and (-webkit-min-device-pixel-ratio:2)"> -->
+	<!-- iPad landscape -->
+	<!-- <link rel="apple-touch-startup-image" sizes="1024x748" href="img/startup/startup-1024x748.png" media="screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:landscape)"> -->
+	<!-- iPad Portrait -->
+	<!-- <link rel="apple-touch-startup-image" sizes="768x1004" href="img/startup/startup-768x1004.png" media="screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait)"> -->
+	
+	<!-- Windows 8 / RT -->
+	<meta name="msapplication-TileImage" content="img/apple-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#000">
+	<meta http-equiv="cleartype" content="on">
 </head>
-<body>
+
+<body class="clearfix">
 
 	<header id="header">
 		<div class="wrapper">
 			<p>Header</p>
 		</div>
 	</header>
+	<nav id="navigation">
+		<div class="wrapper">
+			<p>Navigation</p>
+		</div>
+	</nav>
 	<div class="wrapper">
 		<div id="content">
-			<section id="main">
-				<section class="section">
-					<h2>Page Title</h2>
-				</section>
-				<section class="section col-3">
-					<div class="row">
-						<div class="col">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, eos minima voluptatibus corporis reprehenderit animi suscipit consequatur asperiores qui dolorem iusto ex harum atque laboriosam beatae ipsam facere neque voluptate.</p>
-						</div>
-						<div class="col">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, voluptatibus consequatur ex vel animi inventore officia. Ab, perspiciatis, praesentium, voluptatibus iste reprehenderit molestiae ducimus hic sit quae necessitatibus culpa veritatis.</p>
-						</div>
-						<div class="col">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, voluptas, laboriosam, natus corporis similique eligendi maiores quo nulla molestias velit magni enim laudantium cupiditate aut ullam reprehenderit iste. Fuga, sapiente.</p>
-						</div>
+			<section class="section search">
+				<div class="page-title-banner">
+					<p>Student Support Center</p>
+				</div>
+				<form class="form-inline" role="form">
+					<div class="form-group">
+						<label class="hide-label" for="name">Name</label>
+						<input type="text" class="form-control" id="name" placeholder="Enter Name">
+						<button type="submit" class="button">Submit</button>
 					</div>
-					<div class="row">
-						<div class="col">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, eos minima voluptatibus corporis reprehenderit animi suscipit consequatur asperiores qui dolorem iusto ex harum atque laboriosam beatae ipsam facere neque voluptate.</p>
-						</div>
-						<div class="col">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, voluptatibus consequatur ex vel animi inventore officia. Ab, perspiciatis, praesentium, voluptatibus iste reprehenderit molestiae ducimus hic sit quae necessitatibus culpa veritatis.</p>
-						</div>
-						<div class="col">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, voluptas, laboriosam, natus corporis similique eligendi maiores quo nulla molestias velit magni enim laudantium cupiditate aut ullam reprehenderit iste. Fuga, sapiente.</p>
-						</div>
-					</div>
-				</section> 
+				</form>
 			</section>
-			<aside id="sidebar">
-				<p>Sidebar</p>
-			</aside>
-		</div>	
+			<section class="section resources gal-col-4">
+				<div class="div a">
+					<h3>Collaboration Room</h3>
+					<p>Ask questions, provide answwers and collaborate with students near you!</p>
+				</div>
+				<div class="div b">
+					<h3>Tutoring Center</h3>
+					<p>Improve your goals or reach your academic goals!</p>
+				</div>
+				<div class="div c">
+					<h3>Student Discounts</h3>
+					<p>Save on various business offers, shopping feeds, entertainment and more!</p>
+				</div>
+				<div class="div d">
+					<h3>Career Build-up</h3>
+					<p>loem ipsum text that is used as a placeholder to give a somewhat realistic feel.</p>
+				</div>
+			</section>
+		</div>
 	</div>
 	<footer id="footer">
 		<div class="wrapper">
 			<p>Footer</p>
 		</div>
 	</footer>
-		
-	<script src="js/libs/jquery.min.js"></script>
-	<script src="js/_main.js"></script>
+	<footer id="post-footer">
+		<div class="wrapper">
+			<p class="small copyright">Nizloo</p>
+		</div>
+	</footer>
 
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery.min.js"><\/script>')</script>
+	
+	<script src="js/helper.js"></script>
+	<script src="js/_main.js"></script>
+	
+	<script>
+		var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+		g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+		s.parentNode.insertBefore(g,s)}(document,"script"));
+	</script>
+	
 </body>
 </html>

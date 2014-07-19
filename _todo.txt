@@ -4,6 +4,13 @@
 4. In components "responsive utilities" there is a bug that God willing you can learn about and use the js fix.
 
 
+** ===== Current ===== **
+
+1. Add equal columns to the boxes.
+2. Make section-title
 
 
-** Make section-title
+
+** ===== Prelaunch ===== **
+
+1. Customize Modernizr

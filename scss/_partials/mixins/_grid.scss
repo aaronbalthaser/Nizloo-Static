@@ -23,15 +23,16 @@
 
 // Padding end of Main Content -------
 // -----------------------------------
-@mixin content($padding: $bottom-padding) {
-	padding-bottom: $padding;
+@mixin content($padding-top: $padding-top, $padding-bottom: $padding-bottom) {
+	padding-top: $padding-top;
+	padding-bottom: $padding-bottom;
 	@include clearfix();
 }
 
 // Sections					  --------
 // -----------------------------------
-@mixin sections($padding: $bottom-padding) {
-	margin-bottom: $padding;
+@mixin section($padding-bottom: $padding-bottom) {
+	margin-bottom: $padding-bottom;
 	@include clearfix();
 }
 
