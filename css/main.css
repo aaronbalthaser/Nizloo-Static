@@ -254,9 +254,22 @@ body {
 
 /* line 23, ../scss/base/_base.scss */
 body {
-  font-size: 14px; }
+  font-size: 14px;
+  font-family: "Droid Sans", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background: url('../images/bg-main.jpg?1405919915') no-repeat center top;
+  width: 100%;
+  display: table; }
+  /* line 5, ../scss/_partials/mixins/_clearfix.scss */
+  body:before, body:after {
+    content: " ";
+    display: table; }
+  /* line 10, ../scss/_partials/mixins/_clearfix.scss */
+  body:after {
+    clear: both; }
 
-/* line 30, ../scss/base/_base.scss */
+/* line 37, ../scss/base/_base.scss */
 a {
   color: #43759f;
   text-decoration: none;
@@ -267,14 +280,14 @@ a {
   -o-transition: all 1s;
   -webkit-transition: all 1s;
   transition: all 1s; }
-  /* line 38, ../scss/base/_base.scss */
+  /* line 45, ../scss/base/_base.scss */
   a:hover {
     text-decoration: none;
     color: #1f3649; }
-  /* line 43, ../scss/base/_base.scss */
+  /* line 50, ../scss/base/_base.scss */
   a:focus {
     outline: thin dotted; }
-  /* line 47, ../scss/base/_base.scss */
+  /* line 54, ../scss/base/_base.scss */
   a:active, a:hover {
     outline: 0; }
 
@@ -290,56 +303,56 @@ a {
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300");
 @import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 */
-/* line 55, ../scss/base/_base.scss */
+/* line 62, ../scss/base/_base.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Droid Sans", sans-serif;
   color: inherit;
   line-height: 1.5em;
   text-rendering: optimizelegibility; }
 
-/* line 62, ../scss/base/_base.scss */
+/* line 69, ../scss/base/_base.scss */
 h1 small,
 h2 small {
   font-weight: normal;
   color: #101010; }
 
-/* line 68, ../scss/base/_base.scss */
+/* line 75, ../scss/base/_base.scss */
 h1,
 .h1 {
   font-size: 24px;
   margin-bottom: 12px; }
 
-/* line 74, ../scss/base/_base.scss */
+/* line 81, ../scss/base/_base.scss */
 h2,
 .h2 {
   font-size: 18px;
   margin-bottom: 12px; }
 
-/* line 80, ../scss/base/_base.scss */
+/* line 87, ../scss/base/_base.scss */
 h3,
 .h3 {
   font-size: 16px;
   margin-bottom: 10px; }
 
-/* line 86, ../scss/base/_base.scss */
+/* line 93, ../scss/base/_base.scss */
 h4,
 .h4 {
   font-size: 14px;
   margin-bottom: 8px; }
 
-/* line 92, ../scss/base/_base.scss */
+/* line 99, ../scss/base/_base.scss */
 h5,
 .h5 {
   font-size: 12px;
   margin-bottom: 6px; }
 
-/* line 98, ../scss/base/_base.scss */
+/* line 105, ../scss/base/_base.scss */
 h6,
 .h6 {
   font-size: 11px;
   margin-bottom: 4px; }
 
-/* line 104, ../scss/base/_base.scss */
+/* line 111, ../scss/base/_base.scss */
 p,
 ul,
 ol,
@@ -351,15 +364,15 @@ pre,
 code {
   margin-bottom: 22px; }
 
-/* line 116, ../scss/base/_base.scss */
+/* line 123, ../scss/base/_base.scss */
 p:last-child {
   margin-bottom: 0px; }
 
-/* line 124, ../scss/base/_base.scss */
+/* line 131, ../scss/base/_base.scss */
 small {
   font-size: 80%; }
 
-/* line 128, ../scss/base/_base.scss */
+/* line 135, ../scss/base/_base.scss */
 sub,
 sup {
   font-size: 75%;
@@ -367,65 +380,65 @@ sup {
   position: relative;
   vertical-align: baseline; }
 
-/* line 136, ../scss/base/_base.scss */
+/* line 143, ../scss/base/_base.scss */
 sup {
   top: -.5em; }
 
-/* line 140, ../scss/base/_base.scss */
+/* line 147, ../scss/base/_base.scss */
 sub {
   bottom: -.25em; }
 
-/* line 144, ../scss/base/_base.scss */
+/* line 151, ../scss/base/_base.scss */
 ins {
   background-color: #ffff99;
   color: black;
   text-decoration: none; }
 
-/* line 150, ../scss/base/_base.scss */
+/* line 157, ../scss/base/_base.scss */
 mark {
   background-color: #ffff99;
   font-style: italic;
   font-weight: bold;
   color: black; }
 
-/* line 157, ../scss/base/_base.scss */
+/* line 164, ../scss/base/_base.scss */
 del {
   text-decoration: line-through; }
 
-/* line 161, ../scss/base/_base.scss */
+/* line 168, ../scss/base/_base.scss */
 abbr[title],
 dfn[title] {
   border-bottom: 1px dotted;
   cursor: help; }
 
-/* line 167, ../scss/base/_base.scss */
+/* line 174, ../scss/base/_base.scss */
 input,
 select {
   vertical-align: middle; }
 
-/* line 172, ../scss/base/_base.scss */
+/* line 179, ../scss/base/_base.scss */
 strong,
 th,
 head td {
   font-weight: 600; }
 
-/* line 178, ../scss/base/_base.scss */
+/* line 185, ../scss/base/_base.scss */
 cite,
 em {
   font-style: italic; }
 
-/* line 183, ../scss/base/_base.scss */
+/* line 190, ../scss/base/_base.scss */
 code,
 pre {
   display: block;
   font-family: "Courier New", Courier, monospace;
   white-space: pre; }
 
-/* line 190, ../scss/base/_base.scss */
+/* line 197, ../scss/base/_base.scss */
 dfn {
   font-style: italic; }
 
-/* line 194, ../scss/base/_base.scss */
+/* line 201, ../scss/base/_base.scss */
 hr {
   display: block;
   border: 0;
@@ -434,19 +447,19 @@ hr {
   padding: 0;
   height: 1px; }
 
-/* line 203, ../scss/base/_base.scss */
+/* line 210, ../scss/base/_base.scss */
 ::selection {
   background: #c4e3fb;
   color: white;
   text-shadow: none; }
 
-/* line 209, ../scss/base/_base.scss */
+/* line 216, ../scss/base/_base.scss */
 ::-moz-selection {
   background: #c4e3fb;
   color: white;
   text-shadow: none; }
 
-/* line 215, ../scss/base/_base.scss */
+/* line 222, ../scss/base/_base.scss */
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -460,44 +473,44 @@ textarea {
   -ms-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out; }
 
-/* line 233, ../scss/base/_base.scss */
+/* line 240, ../scss/base/_base.scss */
 ul {
   list-style-type: disc;
   margin-left: 1.5em; }
 
-/* line 238, ../scss/base/_base.scss */
+/* line 245, ../scss/base/_base.scss */
 ul li {
   margin-left: .85em; }
 
-/* line 242, ../scss/base/_base.scss */
+/* line 249, ../scss/base/_base.scss */
 ul ul {
   list-style-type: square; }
 
-/* line 246, ../scss/base/_base.scss */
+/* line 253, ../scss/base/_base.scss */
 ul ul ul {
   list-style-type: circle; }
 
-/* line 250, ../scss/base/_base.scss */
+/* line 257, ../scss/base/_base.scss */
 ol {
   list-style-position: outside;
   list-style-type: decimal;
   margin-left: 2.35em; }
 
-/* line 256, ../scss/base/_base.scss */
+/* line 263, ../scss/base/_base.scss */
 dt {
   margin-top: .8em;
   margin-bottom: .4em;
   font-weight: bold; }
 
-/* line 262, ../scss/base/_base.scss */
+/* line 269, ../scss/base/_base.scss */
 ol ol, ul ol {
   margin-left: 2.5em; }
 
-/* line 266, ../scss/base/_base.scss */
+/* line 273, ../scss/base/_base.scss */
 ul ol, ol ul, ol ol, ul ul {
   margin-bottom: 0; }
 
-/* line 273, ../scss/base/_base.scss */
+/* line 280, ../scss/base/_base.scss */
 blockquote {
   margin: 0 0 1.5em -24px;
   padding-left: 24px;
@@ -505,11 +518,11 @@ blockquote {
   font-family: Cambria, Georgia, Times, "Times New Roman";
   font-style: normal; }
 
-/* line 281, ../scss/base/_base.scss */
+/* line 288, ../scss/base/_base.scss */
 q {
   quotes: none; }
 
-/* line 285, ../scss/base/_base.scss */
+/* line 292, ../scss/base/_base.scss */
 blockquote:before,
 blockquote:after,
 q:before,
@@ -517,12 +530,12 @@ q:after {
   content: '';
   content: none; }
 
-/* line 296, ../scss/base/_base.scss */
+/* line 303, ../scss/base/_base.scss */
 a img {
   border: none;
   vertical-align: bottom; }
 
-/* line 301, ../scss/base/_base.scss */
+/* line 308, ../scss/base/_base.scss */
 img {
   display: inline-block;
   border: 0;
@@ -532,14 +545,14 @@ img {
   max-width: 100%;
   -ms-interpolation-mode: bicubic; }
 
-/* line 311, ../scss/base/_base.scss */
+/* line 318, ../scss/base/_base.scss */
 .img.scale {
   display: block;
   width: 100% \9;
   max-width: 100%;
   height: auto; }
 
-/* line 316, ../scss/base/_base.scss */
+/* line 323, ../scss/base/_base.scss */
 .img-rounded {
   -moz-border-radius: 6;
   -webkit-border-radius: 6;
@@ -595,6 +608,191 @@ img {
  * A module is a reusable component on a page, button, widget, callout, banner, etc. Usually modules sit inside layout components but they can also exist withing other modules. However it is good practice to design each module component as a stand alone component so you can rearrange or move them with effecting the layout. Since modules are reusable always use class names.
  *
  */
+/* line 5, ../scss/modules/components/_signin-register-form.scss */
+#signin-registration-form {
+  position: relative;
+  float: right; }
+
+/* line 10, ../scss/modules/components/_signin-register-form.scss */
+.signin-registration {
+  display: inline-block;
+  float: right;
+  position: relative;
+  z-index: 30;
+  cursor: pointer; }
+
+/* line 19, ../scss/modules/components/_signin-register-form.scss */
+#signin-button {
+  border-right: 1px solid white; }
+  /* line 22, ../scss/modules/components/_signin-register-form.scss */
+  #signin-button span {
+    color: white;
+    padding: 0px 10px 0px 0px;
+    display: block; }
+
+/* line 32, ../scss/modules/components/_signin-register-form.scss */
+#registration-button span {
+  color: white;
+  padding: 0px 0px 0px 10px;
+  display: block; }
+
+/* line 40, ../scss/modules/components/_signin-register-form.scss */
+#signin-box,
+#registration-box {
+  position: absolute;
+  top: 43px;
+  display: none;
+  z-index: 29; }
+
+/* line 48, ../scss/modules/components/_signin-register-form.scss */
+#signin-box {
+  right: 60px; }
+
+/* line 52, ../scss/modules/components/_signin-register-form.scss */
+#registration-box {
+  right: 0px; }
+
+/* line 57, ../scss/modules/components/_signin-register-form.scss */
+#signin-form {
+  width: 248px;
+  margin-top: -1px;
+  background: #417897;
+  padding: 7px; }
+  /* line 63, ../scss/modules/components/_signin-register-form.scss */
+  #signin-form fieldset {
+    margin: 0 0 12px 0;
+    display: block;
+    border: 0;
+    padding: 0; }
+  /* line 70, ../scss/modules/components/_signin-register-form.scss */
+  #signin-form fieldset#body {
+    background: #fff;
+    padding: 10px 13px;
+    margin: 0; }
+  /* line 76, ../scss/modules/components/_signin-register-form.scss */
+  #signin-form #checkbox {
+    width: auto;
+    margin: 1px 9px 0 0;
+    float: left;
+    padding: 0;
+    border: 0;
+    *margin: -3px 9px 0 0;
+    /* IE7 Fix */ }
+  /* line 85, ../scss/modules/components/_signin-register-form.scss */
+  #signin-form #body label {
+    color: #323232;
+    margin: 9px 0 0 0;
+    display: block;
+    float: left; }
+  /* line 92, ../scss/modules/components/_signin-register-form.scss */
+  #signin-form #body fieldset label {
+    display: block;
+    float: none;
+    margin: 0 0 6px 0; }
+  /* line 98, ../scss/modules/components/_signin-register-form.scss */
+  #signin-form input {
+    width: 100%;
+    border: 1px solid #899caa;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    color: #3a454d;
+    font-weight: bold;
+    padding: 8px 8px;
+    box-shadow: inset 0px 1px 3px #bbb;
+    -webkit-box-shadow: inset 0px 1px 3px #bbb;
+    -moz-box-shadow: inset 0px 1px 3px #bbb; }
+  /* line 112, ../scss/modules/components/_signin-register-form.scss */
+  #signin-form #signin {
+    width: auto;
+    float: left;
+    background: #339cdf;
+    color: #fff;
+    padding: 7px 10px 8px 10px;
+    text-shadow: 0px -1px #278db8;
+    border: 1px solid #339cdf;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    margin: 0 12px 0 0;
+    cursor: pointer;
+    *padding: 7px 2px 8px 2px;
+    /* IE7 Fix */ }
+  /* line 128, ../scss/modules/components/_signin-register-form.scss */
+  #signin-form span {
+    text-align: center;
+    display: block;
+    padding: 7px 0 4px 0; }
+  /* line 134, ../scss/modules/components/_signin-register-form.scss */
+  #signin-form span a {
+    color: white; }
+  /* line 138, ../scss/modules/components/_signin-register-form.scss */
+  #signin-form::before {
+    position: absolute;
+    content: "";
+    top: -19px;
+    right: 16px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #417897;
+    border-top: 10px solid transparent; }
+
+/* line 148, ../scss/modules/components/_signin-register-form.scss */
+#registration-links {
+  width: 248px;
+  margin-top: -1px;
+  background: #417897;
+  padding: 7px; }
+  /* line 154, ../scss/modules/components/_signin-register-form.scss */
+  #registration-links #inner {
+    background: #fbfbfb;
+    padding: 0 4px; }
+    /* line 5, ../scss/_partials/mixins/_clearfix.scss */
+    #registration-links #inner .register-student:before, #registration-links #inner .register-student:after,
+    #registration-links #inner .register-tutor:before,
+    #registration-links #inner .register-tutor:after {
+      content: " ";
+      display: table; }
+    /* line 10, ../scss/_partials/mixins/_clearfix.scss */
+    #registration-links #inner .register-student:after,
+    #registration-links #inner .register-tutor:after {
+      clear: both; }
+    /* line 163, ../scss/modules/components/_signin-register-form.scss */
+    #registration-links #inner div {
+      border-bottom: 1px solid #e4e4e4;
+      padding: 6px;
+      vertical-align: middle; }
+      /* line 168, ../scss/modules/components/_signin-register-form.scss */
+      #registration-links #inner div i {
+        width: 20px;
+        font-size: 20px;
+        margin-right: 20px;
+        color: #417897; }
+      /* line 175, ../scss/modules/components/_signin-register-form.scss */
+      #registration-links #inner div p {
+        float: left;
+        margin-bottom: 0; }
+      /* line 180, ../scss/modules/components/_signin-register-form.scss */
+      #registration-links #inner div a {
+        color: #323232; }
+    /* line 185, ../scss/modules/components/_signin-register-form.scss */
+    #registration-links #inner div:last-child {
+      border-bottom: none;
+      border-top: 1px solid #ffffff; }
+  /* line 191, ../scss/modules/components/_signin-register-form.scss */
+  #registration-links::before {
+    position: absolute;
+    content: "";
+    top: -19px;
+    right: 16px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #417897;
+    border-top: 10px solid transparent; }
+
 /* line 1, ../scss/modules/components/_forms.scss */
 .mine {
   padding: 12px 20px;
@@ -619,7 +817,6 @@ img {
 /* line 22, ../scss/modules/components/_forms.scss */
 label {
   display: inline-block;
-  font-weight: bold;
   margin: 5px;
   max-width: 100%; }
 
@@ -770,6 +967,30 @@ div.callout {
   bottom: -20px;
   border-top: 10px solid #444; }
 
+/* line 4, ../scss/modules/components/_logo.scss */
+.logo {
+  float: left; }
+  /* line 7, ../scss/modules/components/_logo.scss */
+  .logo h3 {
+    margin: 0; }
+
+/* line 12, ../scss/modules/components/_logo.scss */
+#logo {
+  width: 70px;
+  height: 19px;
+  background: url('../images/logo.png?1405795789') no-repeat; }
+  /* line 17, ../scss/modules/components/_logo.scss */
+  #logo span {
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden; }
+
+/* line 4, ../scss/modules/sections/_header.scss */
+#header {
+  background: #417897;
+  padding: 12px 0; }
+
 /**
  * The layout refers to how you position various elements on the page. We can categorize these elements into major and minor components. Minor elements such as forms, buttons, and navigation menues are contained within major components. The major components are called layout styles and they represent the big blocks of information such as header, footer or sidebar. Normally the major components only appeare once in a page, therefor it is a good practice to use id's.
  * 
@@ -778,82 +999,61 @@ div.callout {
  * Use "l" as a prefix for (layout).
  *
  */
-/* line 13, ../scss/layout/_layout.scss */
-#header {
-  background: purple; }
-  /* line 5, ../scss/_partials/mixins/_clearfix.scss */
-  #header:before, #header:after {
-    content: " ";
-    display: table; }
-  /* line 10, ../scss/_partials/mixins/_clearfix.scss */
-  #header:after {
-    clear: both; }
+/* line 5, ../scss/_partials/mixins/_clearfix.scss */
+#header:before, #header:after {
+  content: " ";
+  display: table; }
+/* line 10, ../scss/_partials/mixins/_clearfix.scss */
+#header:after {
+  clear: both; }
 
-/* line 18, ../scss/layout/_layout.scss */
-#navigation {
-  background: green; }
-  /* line 5, ../scss/_partials/mixins/_clearfix.scss */
-  #navigation:before, #navigation:after {
-    content: " ";
-    display: table; }
-  /* line 10, ../scss/_partials/mixins/_clearfix.scss */
-  #navigation:after {
-    clear: both; }
+/* line 5, ../scss/_partials/mixins/_clearfix.scss */
+#navigation:before, #navigation:after {
+  content: " ";
+  display: table; }
+/* line 10, ../scss/_partials/mixins/_clearfix.scss */
+#navigation:after {
+  clear: both; }
 
-/* line 23, ../scss/layout/_layout.scss */
-#main {
-  background: yellow; }
-  /* line 5, ../scss/_partials/mixins/_clearfix.scss */
-  #main:before, #main:after {
-    content: " ";
-    display: table; }
-  /* line 10, ../scss/_partials/mixins/_clearfix.scss */
-  #main:after {
-    clear: both; }
+/* line 5, ../scss/_partials/mixins/_clearfix.scss */
+#main:before, #main:after {
+  content: " ";
+  display: table; }
+/* line 10, ../scss/_partials/mixins/_clearfix.scss */
+#main:after {
+  clear: both; }
 
-/* line 28, ../scss/layout/_layout.scss */
-#main-lft {
-  background: yellow; }
-  /* line 5, ../scss/_partials/mixins/_clearfix.scss */
-  #main-lft:before, #main-lft:after {
-    content: " ";
-    display: table; }
-  /* line 10, ../scss/_partials/mixins/_clearfix.scss */
-  #main-lft:after {
-    clear: both; }
+/* line 5, ../scss/_partials/mixins/_clearfix.scss */
+#main-lft:before, #main-lft:after {
+  content: " ";
+  display: table; }
+/* line 10, ../scss/_partials/mixins/_clearfix.scss */
+#main-lft:after {
+  clear: both; }
 
-/* line 33, ../scss/layout/_layout.scss */
-#sidebar {
-  background: orange; }
-  /* line 5, ../scss/_partials/mixins/_clearfix.scss */
-  #sidebar:before, #sidebar:after {
-    content: " ";
-    display: table; }
-  /* line 10, ../scss/_partials/mixins/_clearfix.scss */
-  #sidebar:after {
-    clear: both; }
+/* line 5, ../scss/_partials/mixins/_clearfix.scss */
+#sidebar:before, #sidebar:after {
+  content: " ";
+  display: table; }
+/* line 10, ../scss/_partials/mixins/_clearfix.scss */
+#sidebar:after {
+  clear: both; }
 
-/* line 38, ../scss/layout/_layout.scss */
-#sidebar-lft {
-  background: orange; }
-  /* line 5, ../scss/_partials/mixins/_clearfix.scss */
-  #sidebar-lft:before, #sidebar-lft:after {
-    content: " ";
-    display: table; }
-  /* line 10, ../scss/_partials/mixins/_clearfix.scss */
-  #sidebar-lft:after {
-    clear: both; }
+/* line 5, ../scss/_partials/mixins/_clearfix.scss */
+#sidebar-lft:before, #sidebar-lft:after {
+  content: " ";
+  display: table; }
+/* line 10, ../scss/_partials/mixins/_clearfix.scss */
+#sidebar-lft:after {
+  clear: both; }
 
-/* line 43, ../scss/layout/_layout.scss */
-#footer {
-  background: blue; }
-  /* line 5, ../scss/_partials/mixins/_clearfix.scss */
-  #footer:before, #footer:after {
-    content: " ";
-    display: table; }
-  /* line 10, ../scss/_partials/mixins/_clearfix.scss */
-  #footer:after {
-    clear: both; }
+/* line 5, ../scss/_partials/mixins/_clearfix.scss */
+#footer:before, #footer:after {
+  content: " ";
+  display: table; }
+/* line 10, ../scss/_partials/mixins/_clearfix.scss */
+#footer:after {
+  clear: both; }
 
 /**
  * State rules refer to different behaviors of certain elements. For example an accordian controll can be in an expanded or collapsed state. Or a certain element can be visible or hidden. State rules indicate some sort of JavaScript dependency and are different from changing the module styles using sub-classes. State rules are most often tied with a specific module. Consider a tab which usually has two states, the default or active.

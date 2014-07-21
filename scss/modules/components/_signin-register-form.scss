@@ -1,0 +1,236 @@
+// Signin Register Form --------------
+// -----------------------------------
+
+// Login Container (default to float: right)
+#signin-registration-form {
+    position: relative;
+    float: right;
+}
+
+.signin-registration {
+	display: inline-block;
+    float: right;
+    position: relative;
+    z-index: 30;
+    cursor: pointer;
+}
+
+// Signin Button
+#signin-button { 
+	border-right: 1px solid $base-light;
+    
+    span {
+	    color: $base-light; 
+	    padding: 0px 10px 0px 0px;
+	    display: block
+	}
+}
+
+// Register Button
+#registration-button { 
+   
+    span {
+	    color: $base-light; 
+	    padding: 0px 0px 0px 10px;
+	    display: block
+	}
+}
+
+// Login Box
+#signin-box,
+#registration-box {
+    position: absolute;
+    top: 43px;
+    display: none;
+    z-index: 29;
+}
+
+#signin-box {
+	right: 60px;
+}
+
+#registration-box {
+	right: 0px;
+}
+
+// Login Form 
+#signin-form {
+    width: 248px; 
+    margin-top: -1px;
+    background: $base-blue;
+    padding: 7px;
+    
+    fieldset {
+	    margin: 0 0 12px 0;
+	    display: block;
+	    border: 0;
+	    padding: 0;
+	}
+	
+	fieldset#body {
+	    background: #fff;
+	    padding: 10px 13px;
+	    margin: 0;
+	}
+	
+	#checkbox {
+	    width: auto;
+	    margin: 1px 9px 0 0;
+	    float: left;
+	    padding: 0;
+	    border: 0;
+	    *margin: -3px 9px 0 0; /* IE7 Fix */
+	}
+	
+	#body label {
+	    color: $base-gray-dark;
+	    margin: 9px 0 0 0;
+	    display: block;
+	    float: left;
+	}
+	
+	#body fieldset label {
+	    display: block;
+	    float: none;
+	    margin: 0 0 6px 0;
+	}
+	
+	input {
+	    width: 100%;
+	    border: 1px solid #899caa;
+	    border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    color: #3a454d;
+	    font-weight: bold;
+	    padding: 8px 8px;
+	    box-shadow: inset 0px 1px 3px #bbb;
+	    -webkit-box-shadow: inset 0px 1px 3px #bbb;
+	    -moz-box-shadow: inset 0px 1px 3px #bbb;
+	}
+	
+	// Signin Button
+	#signin {
+	    width: auto;
+	    float: left;
+	    background: #339cdf;
+	    color: #fff;
+	    padding: 7px 10px 8px 10px;
+	    text-shadow: 0px -1px #278db8;
+	    border: 1px solid #339cdf;
+	    box-shadow: none;
+	    -moz-box-shadow: none;
+	    -webkit-box-shadow: none;
+	    margin: 0 12px 0 0;
+	    cursor: pointer;
+	    *padding: 7px 2px 8px 2px; /* IE7 Fix */
+	}
+	
+	span {
+	    text-align: center;
+	    display: block;
+	    padding: 7px 0 4px 0;
+	}
+	
+	span a {
+	    color: $base-light;
+	}
+	
+	&::before {
+		position: absolute;
+		content: "";
+		top: -19px;
+		right: 16px;
+	    @include triangle ("up", 10px, $base-blue);
+    }
+}
+
+// Registration Links
+#registration-links {
+	width: 248px; 
+    margin-top: -1px;
+    background: $base-blue;
+    padding: 7px;
+    
+    #inner {
+	    background: #fbfbfb;
+	    padding: 0 4px;
+	    
+	    .register-student,
+	    .register-tutor {
+		    @include clearfix();
+	    }
+		
+		div {
+			border-bottom: 1px solid #e4e4e4;
+		    padding: 6px;
+		    vertical-align: middle;
+		    
+		    i {
+		    	width: 20px;
+			    font-size: 20px;
+			    margin-right: 20px;
+			    color: $base-blue;
+		    }
+		    
+		    p {
+			    float: left;
+			    margin-bottom: 0;
+		    }
+		    
+		    a {
+			    color: #323232;
+		    }
+	    }
+	    
+	    div:last-child {
+		    border-bottom: none;
+		    border-top: 1px solid #ffffff;
+	    }
+    }
+    
+    &::before {
+		position: absolute;
+		content: "";
+		top: -19px;
+		right: 16px;
+	    @include triangle ("up", 10px, $base-blue);
+    }
+}
+
+// Sub-Categories
+// -------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	

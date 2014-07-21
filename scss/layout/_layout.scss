@@ -12,35 +12,28 @@
 
 #header {
 	@include clearfix();
-	background: purple;
 }
 
 #navigation {
 	@include clearfix();
-	background: green;
 }
 
 #main {
 	@include clearfix();
-	background: yellow;
 }
 
 #main-lft {
 	@include clearfix();
-	background: yellow;
 }
 
 #sidebar {
 	@include clearfix();
-	background: orange;
 }
 
 #sidebar-lft {
 	@include clearfix();
-	background: orange;
 }
 
 #footer {
 	@include clearfix();
-	background: blue;
 }
