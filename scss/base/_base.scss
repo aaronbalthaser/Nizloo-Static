@@ -26,6 +26,7 @@ body {
     line-height: $base-line-height;
     font-weight: $base-font-weight;
     @include clearfix();
+    
 	background: image-url("bg-main.jpg") no-repeat center top;
 	width: 100%;
 	display: table;
@@ -118,6 +119,12 @@ blockquote,
 pre,
 code {
     margin-bottom: 22px;
+    letter-spacing: 1px;
+}
+
+p,
+a {
+	letter-spacing: 1px;
 }
 
 p:last-child {

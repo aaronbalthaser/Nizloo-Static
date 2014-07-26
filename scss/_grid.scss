@@ -93,7 +93,7 @@ $susy: (
 }
 
 // Gallery (4 col)
-.gal-col-4 .div {
+.gal-col-4 .column {
 	@include gallery(6 of 12);
 	
 	@include breakpoint($beyond) {
@@ -107,7 +107,7 @@ $susy: (
 
 
 
-// Delete ==================
+// delete ==================
 .a {
 	background: red;
 }

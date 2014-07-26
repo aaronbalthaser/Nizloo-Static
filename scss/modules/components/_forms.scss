@@ -1,13 +1,15 @@
-.mine {
-	padding: 12px 20px;
-	background: #eaeaea;
-	border-radius: 12px;
-}
+// Forms -----------------------------
+// -----------------------------------
 
+// Base
+// -------------------------
+
+// Group Seperator
 .form-group {
 	margin-bottom: 20px;
 }
 
+// Hide Label
 .hide-label {
 	border: 0 none;
 	clip: rect(0px, 0px, 0px, 0px);
@@ -21,11 +23,11 @@
 
 label {
 	display: inline-block;
-	//font-weight: bold;
 	margin: 5px;
 	max-width: 100%; 
 }
 
+// Input Field
 .form-control {
 	background: white;
 	background-image: none;
@@ -39,18 +41,19 @@ label {
 	line-height: 1.5;
 	padding: 6px 12px;
 	width: 100%;
+	
+	@include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+	@include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
 }
 
+// Button
 button {
 	border: none;
 }
 
 .button {
-	background: white;
-}
-
-.button {
 	width: 100%;
+	background: white;
 	-moz-user-select: none;
 	background-image: none;
 	border-radius: 4px;
@@ -68,6 +71,7 @@ button {
 
 
 .form-inline {
+
 	button {
 		margin-top: 20px;
 	}
@@ -100,16 +104,84 @@ button {
 		}
 		
 		.button {
-			width: 120px;
 			width: 10%;
-			float: right
+			float: right;
 		}
 	}
 }
 
+// Home Search 
+// -------------------------
 
+.form-container {
+	max-width: 520px;
+	margin: 0 auto;
+	
+	.out {
+		background: none;
+		@include border-radius(12px);
+		
+		@include respond-to(desktop) {
+			background: $base-blue;
+			border: solid 5px rgba(255,255,255,0.1);
+			background-clip: padding-box;
+		}
+	}
+}
 
-
+.form-inline.search-form {
+	
+	input {
+		border: solid 5px rgba(255,255,255,0.1);
+		background-clip: padding-box;
+		height: 51px;
+	}
+	
+	.button {
+		background: $base-blue;
+		color: $base-light;
+	}
+	
+	@include respond-to(desktop) {
+		
+		input {
+			border: none;
+		}
+	
+		button {		
+			margin-top: 0px;
+			background: none;
+			padding: 14px 12px;
+		}
+		
+		.button {
+			width: 30%;
+			float: left;
+			color: white;
+		}
+		
+		.form-group {
+			margin-bottom: 0;
+			vertical-align: middle;
+			@include clearfix();
+		}
+		
+		label {
+			margin:0;
+		}
+		
+		.form-control {
+			display: inline-block;
+			vertical-align: middle;
+			width: 70%;
+			font-size: 14px;
+			height: 51px;
+			line-height: 1.5;
+			padding: 6px 12px;			
+			float: left;			
+		}
+	}
+}
 
 
 

@@ -16,7 +16,8 @@
 	
 	<!-- For all browsers -->
 	<link href='http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif' rel='stylesheet' type='text/css'>
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 	
 	<!--[if (lt IE 9) & (!IEMobile)]>
@@ -112,48 +113,147 @@
             </div>
 		</div>
 	</header>
-	<nav id="navigation">
+	<div id="navigation">
 		<div class="wrapper">
-			<p>Navigation</p>
+			<nav class="navigation-container">
+				<ul>
+					<li><a href="#">home</a></li>
+					<li><a href="#">compane</a></li>
+					<li><a href="#">contact</a></li>
+				</ul>
+			</nav>
 		</div>
-	</nav>
+	</div>
 	<div class="wrapper">
 		<div id="content">
 			<section class="section search">
 				<div class="page-title-banner">
 					<p>Student Support Center</p>
 				</div>
-				<form class="form-inline" role="form">
-					<div class="form-group">
-						<label class="hide-label" for="name">Name</label>
-						<input type="text" class="form-control" id="name" placeholder="Enter Name">
-						<button type="submit" class="button">Submit</button>
+				<div class="form-container">
+					<div class="out">
+						<form class="form-inline search-form" role="form">
+							<div class="form-group">
+								<label class="hide-label" for="name">Name</label>
+								<input type="text" class="form-control" id="name" placeholder="Enter Name">
+								<button type="submit" class="button">Submit</button>
+							</div>
+						</form>
 					</div>
-				</form>
+				</div>				
 			</section>
 			<section class="section resources gal-col-4">
-				<div class="div a">
-					<h3>Collaboration Room</h3>
-					<p>Ask questions, provide answwers and collaborate with students near you!</p>
+				<div class="column">
+					<div class="icon-box framed-box">
+						<div class="feature-box brown">
+							<h3>Collaboration Room</h3>
+							<p>Ask questions, provide answwers and collaborate with students near you!</p>
+							<div class="icon">
+								<p><i class="fa fa-coffee"></i></p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="div b">
-					<h3>Tutoring Center</h3>
-					<p>Improve your goals or reach your academic goals!</p>
+				<div class="column">
+					<div class="icon-box framed-box">
+						<div class="feature-box green">
+							<h3>Tutoring Center</h3>
+							<p>Improve your goals or reach your academic goals!</p>
+							<div class="icon">
+								<p><i class="fa fa-coffee"></i></p>
+							</div>
+						</div>	
+					</div>				
 				</div>
-				<div class="div c">
-					<h3>Student Discounts</h3>
-					<p>Save on various business offers, shopping feeds, entertainment and more!</p>
+				<div class="column">
+					<div class="icon-box framed-box">
+						<div class="feature-box blue">
+							<h3>Student Discounts</h3>
+							<p>Save on various business offers, shopping feeds, entertainment and more!</p>
+							<div class="icon">
+								<p><i class="fa fa-coffee"></i></p>
+							</div>
+						</div>	
+					</div>			
 				</div>
-				<div class="div d">
-					<h3>Career Build-up</h3>
-					<p>loem ipsum text that is used as a placeholder to give a somewhat realistic feel.</p>
+				<div class="column">
+					<div class="icon-box framed-box">
+						<div class="feature-box red">
+							<h3>Career Build-up</h3>
+							<p>loem ipsum text that is used as a placeholder to give a somewhat realistic feel.</p>
+							<div class="icon">
+								<p><i class="fa fa-coffee"></i></p>
+							</div>
+						</div>					
+					</div>
 				</div>
 			</section>
 		</div>
 	</div>
 	<footer id="footer">
 		<div class="wrapper">
-			
+			<header>
+				<div class="logo-footer">
+					<h3 id="logo-footer">
+						<span>Revised Image Replacement</span>
+					</h3>
+					<p>The Intellectual Hangout</p>
+				</div>
+				<div id="navigation-footer">
+					<nav class="navigation-container">
+						<ul>
+							<li><a href="#">home</a></li>
+							<li><a href="#">compane</a></li>
+							<li><a href="#">contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<section class="footer gal-col-4">
+				<div class="column">
+					<div class="icon-box-left dark">
+						<h3><span><i class="fa fa-info-circle"></i></span> Company Info</h3>
+						<div class="info">
+							<ul>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Privacy</a></li>
+								<li><a href="#">Terms of Use</a></li>
+								<li><a href="#"></a>Policies</li>
+								<li><a href="#"></a>Safety</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="icon-box-left dark">
+						<h3><span><i class="fa fa-info-circle"></i></span> Resources</h3>
+						<div class="info">
+							<ul>
+								<li><a href="#">Site Map</a></li>
+								<li><a href="#">FAQ's</a></li>
+								<li><a href="#">Help</a></li>
+							</ul>
+							<button class="btn">Reviews</button>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="icon-box-left dark">
+						
+						<div class="info">
+							
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="icon-box-left dark">
+						
+						<div class="info">
+							
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 	</footer>
 	<footer id="post-footer">

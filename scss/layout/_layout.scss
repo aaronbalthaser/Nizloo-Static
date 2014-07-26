@@ -18,6 +18,10 @@
 	@include clearfix();
 }
 
+#content {
+	@include clearfix();
+}
+
 #main {
 	@include clearfix();
 }
