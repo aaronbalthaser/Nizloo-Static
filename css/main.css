@@ -136,7 +136,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   #main-lft {
     width: 66.10169%;
     float: right; } }
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   /* line 70, ../scss/_grid.scss */
   .col-2 .col {
     width: 49.15254%;
@@ -145,7 +145,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* line 74, ../scss/_grid.scss */
   .col-2 .col:last-child {
     margin-right: 0px; } }
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   /* line 85, ../scss/_grid.scss */
   .col-3 .col {
     width: 32.20339%;
@@ -633,6 +633,26 @@ img {
     height: 0;
     overflow: hidden; }
 
+/* line 27, ../scss/modules/components/_logos.scss */
+.logo-footer-container #logo-footer {
+  width: 70px;
+  height: 19px;
+  display: inline-block;
+  background: url('../images/logo-footer.png?1406606715') no-repeat;
+  margin-right: 20px;
+  float: left; }
+  /* line 36, ../scss/modules/components/_logos.scss */
+  .logo-footer-container #logo-footer span {
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden; }
+/* line 44, ../scss/modules/components/_logos.scss */
+.logo-footer-container p.slogan {
+  font-size: 18px;
+  color: #6e6e6e;
+  float: left; }
+
 /* line 9, ../scss/modules/components/_page-titles.scss */
 .page-title-banner p {
   font-size: 40px;
@@ -1095,6 +1115,30 @@ button {
 .search {
   padding: 100px 0 100px 0; }
 
+/* line 4, ../scss/modules/sections/_footer.scss */
+#footer {
+  background: #323232;
+  padding: 40px 0; }
+  /* line 8, ../scss/modules/sections/_footer.scss */
+  #footer header {
+    border-bottom: 2px solid #6e6e6e; }
+  /* line 16, ../scss/modules/sections/_footer.scss */
+  #footer .footer-header-right {
+    display: none; }
+    @media (min-width: 768px) {
+      /* line 16, ../scss/modules/sections/_footer.scss */
+      #footer .footer-header-right {
+        display: inline-block; } }
+
+/* line 25, ../scss/modules/sections/_footer.scss */
+#post-footer {
+  background-color: #171818;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF171818', endColorstr='#FF0E0E0E');
+  background-image: -moz-linear-gradient(top, #171818 0%, #0e0e0e 100%);
+  background-image: -webkit-linear-gradient(top, #171818 0%, #0e0e0e 100%);
+  background-image: linear-gradient(to bottom, #171818 0%, #0e0e0e 100%); }
+
 /**
  * The layout refers to how you position various elements on the page. We can categorize these elements into major and minor components. Minor elements such as forms, buttons, and navigation menues are contained within major components. The major components are called layout styles and they represent the big blocks of information such as header, footer or sidebar. Normally the major components only appeare once in a page, therefor it is a good practice to use id's.
  * 
@@ -1165,6 +1209,14 @@ button {
   display: table; }
 /* line 10, ../scss/_partials/mixins/_clearfix.scss */
 #footer:after {
+  clear: both; }
+
+/* line 5, ../scss/_partials/mixins/_clearfix.scss */
+.footer-header-left:before, .footer-header-left:after {
+  content: " ";
+  display: table; }
+/* line 10, ../scss/_partials/mixins/_clearfix.scss */
+.footer-header-left:after {
   clear: both; }
 
 /**

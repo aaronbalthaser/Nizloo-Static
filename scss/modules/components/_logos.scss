@@ -20,7 +20,35 @@
 		height: 0;
 		overflow: hidden;
 	}
-} 
+}
+
+.logo-footer-container {
+    
+    #logo-footer {
+        width: 70px;
+    	height: 19px;
+    	display: inline-block;
+    	background: image-url("logo-footer.png") no-repeat;
+    	
+    	margin-right: 20px;
+    	float: left;
+    	
+    	span {
+    		display: block;
+    		width: 0;
+    		height: 0;
+    		overflow: hidden;
+    	}
+    }
+    
+    p.slogan {
+        font-size: 18px;
+        color: $base-gray-light;
+    	float: left;
+    	
+    }
+}
+
 
 // Sub-Categories
 // -------------------------

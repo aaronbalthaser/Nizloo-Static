@@ -1,0 +1,35 @@
+// Footer ----------------------------
+// -----------------------------------
+
+#footer {
+    background: $base-gray-dark;
+    padding: 40px 0;
+    
+    header {
+        border-bottom: 2px solid $base-gray-light;
+    }
+    
+    .footer-header-left {
+        
+    }
+    
+    .footer-header-right {
+        display: none;
+        
+        @include breakpoint($tablets) {
+            display: inline-block;
+        }
+    }
+}
+
+#post-footer {
+    background-color: #171818;
+    @include filter-gradient(#171818, #0e0e0e, vertical);
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(top,  #171818 0%,#0e0e0e 100%));
+}
+
+// Sub-Categories
+// -------------------------
+	
+	

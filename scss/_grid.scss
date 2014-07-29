@@ -63,7 +63,7 @@ $susy: (
 }
 
 // Columns 2
-@include respond-to(tablets) {
+@include breakpoint($tablets) {
 	
 	.col-2 {
 		
@@ -78,7 +78,7 @@ $susy: (
 }
 
 // Columns 3
-@include respond-to(tablets) {
+@include breakpoint($tablets) {
 	
 	.col-3 {
 		
