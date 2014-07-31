@@ -23,12 +23,40 @@
 			<ol>
 				<li><span class="strong">button()</span>: Defines the button theme properties including text color, background color and border color.</li>
 				<li><span class="strong">button-size()</span>: Defines button dimensions including vertical & horizontal padding, font size, line height and border radius.</li>
-				<li><span class="strong">button-fluid()</span>: Includes CSS propterties forcing the button to span as wide as it's container.</li>
+				<li><span class="strong">button-fluid()</span>: Includes CSS properties forcing the button to span as wide as it's container.</li>
 			</ol>
+			<p>Add the mixins to a class or id.</p>
 			<h2>Default Button Properties</h2>
 			<p>Default properties can be changed in the _variables mixin file, however it is not necessary to do so. Default properties protect against errors during compilation if parameters are incorrect or missing.</p>
 			<h2>Overriding Default Properties</h2>
-			
+			<p>Default button properties can be overridden by setting default values in the Variables file or by passing the values as parameters into the mixin.</p>
+			<ul>
+				<li>Variables File
+					<ul>
+						<li>Go to variables.scss and add default values to buttons theme.</li>
+					</ul>
+				</li>
+				<li>Mixin Parameters
+					<ul>
+						<li>Theme
+							<ul>
+								<li>$btn-color: #eeeeee</li>
+								<li>$btn-background: #eeeeee</li>
+								<li>$btn-border: #eeeeee</li>
+							</ul>
+						</li>
+						<li>Dimensions
+							<ul>
+								<li>$btn-padding-vertical: 8px</li>
+								<li>$btn-padding-horizontal: 120px</li>
+								<li>$btn-font-size: 18px</li>
+								<li>$btn-line-height: 1.7</li>
+								<li>$btn-border-radius: none</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
 		</section>
 	</div>
 	</div>

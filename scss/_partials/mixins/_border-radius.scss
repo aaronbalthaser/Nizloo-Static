@@ -24,3 +24,11 @@
 	border-bottom-left-radius: $radius;
 	border-top-left-radius: $radius;
 }
+
+// Circle
+
+@mixin circle($size: 40px) {
+     width: $size;
+     height: $size;
+     border-radius: 100%;
+}

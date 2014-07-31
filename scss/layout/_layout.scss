@@ -9,6 +9,8 @@
  * Use "l" as a prefix for (layout).
  *
  */
+ 
+@import "navigation";
 
 #header {
 	@include clearfix();
@@ -44,4 +46,22 @@
 
 .footer-header-left {
     @include clearfix();
+}
+
+#footer header {
+    @include clearfix();
+}
+
+.footer-logo-container {
+    @include clearfix();
+} 
+
+// Home Page
+
+.info {
+    
+    img {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }

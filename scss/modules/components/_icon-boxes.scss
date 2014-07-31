@@ -1,0 +1,54 @@
+// Icon Boxes ------------------------
+// -----------------------------------
+
+// Icon Box Light Gray
+// -------------------------
+
+.icon-box-left {
+    
+    h3 {
+        color: $base-gray-light;
+    }
+    
+    i {
+        font-size: 18px;
+        border: 2px solid $base-gray-light;
+        @include circle(28px);
+        
+        text-align: center;
+        padding-top: 2px;
+    }
+    
+    span {
+        padding-right: 12px;
+    }
+    
+    .info {
+        padding-left: 44px;
+        
+        ul {
+            margin: 0 0 20px 0;
+            padding: 0;
+        }
+        
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        a,
+        p {
+            color: $base-gray-light;
+        }
+        
+        a:hover {
+            color: white;
+        }
+    }
+}
+
+// Sub-Categories
+// -------------------------
+	
+	

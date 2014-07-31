@@ -1,16 +1,12 @@
 // Navigation ------------------------
 // -----------------------------------
 
-#navigation {
-	background: black;
-	padding: 1px 0;
-	opacity: 0.6;
-}
+// Base Inline Navigation
+// -------------------------
 
 .navigation-container {
 	
 	ul {
-	    float: left;
 	    width: 100%;
 	    padding: 0;
 	    margin: 0;
@@ -24,7 +20,46 @@
 	
 	a {
 		font-size: 12px;
-		color: $base-light;
+	}
+}
+
+
+// Navigation Main
+// -------------------------
+
+#navigation {
+	background: black;
+	padding: 1px 0;
+	opacity: 0.6;
+	
+	.navigation-container {
+    	float: left;
+    	
+    	li:first-child {
+        	margin-left: 0;
+    	}
+    	
+    	a {
+        	color: $base-light;
+    	}
+	}
+}
+
+// Navigation Footer
+// -------------------------
+
+#footer {
+    
+    .navigation-container {
+    	float: right;
+    	
+    	li:last-child {
+        	padding-right: 0;
+    	}
+    	
+    	a {
+        	color: $base-gray-light;
+    	}
 	}
 }
 

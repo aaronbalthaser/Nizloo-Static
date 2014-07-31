@@ -6,12 +6,16 @@
  *
  */
 
+.clearfix {
+    @include clearfix();
+}
+
 * {
-  @include box-sizing(border-box);
+    @include box-sizing(border-box);
 }
 *:before,
 *:after {
-  @include box-sizing(border-box);
+    @include box-sizing(border-box);
 }
 
 html,
@@ -27,9 +31,17 @@ body {
     font-weight: $base-font-weight;
     @include clearfix();
     
-	background: image-url("bg-main.jpg") no-repeat center top;
-	width: 100%;
-	display: table;
+	background: image-url("bg-main.jpg") left bottom fixed no-repeat;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+@media only all and (max-width: 1024px) and (max-height: 634px) {
+
+	body {	
+		-moz-background-size: 1024px 768px;
+		background-size: 1024px 768px;
+	}
 }
 
 // Typography
@@ -41,7 +53,7 @@ a {
     background: none;
     outline: none;
     cursor: pointer;
-    @include transition;
+    //@include transition;
 
     &:hover {
         text-decoration: none;
@@ -88,6 +100,7 @@ h2,
 h3,
 .h3 {
     font-size: $h3-font-size;
+    font-family: $base-font-secondary;
     margin-bottom: $h3-margin;
 }
 

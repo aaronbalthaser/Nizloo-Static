@@ -1,9 +1,6 @@
 // Footer ----------------------------
 // -----------------------------------
 
-// Base Footer
-// -------------------------
-
 #footer {
     background: $base-gray-dark;
     padding: 24px 0 30px 0;
@@ -19,17 +16,6 @@
     
     .footer-header-right {
         display: none;
-        position: relative;
-        
-        .btn-expand-collapse {
-            background: image-url("footer-expand.png") no-repeat;
-            width: 69px;
-            height: 39px;
-            
-            position: absolute;
-            top: -50px;
-            right: 0px;
-        }
         
         @include breakpoint($tablets) {
             display: inline-block;
@@ -44,19 +30,6 @@
 
 .footer {
     padding: 24px 0;
-}
-
-// Home Footer
-// -------------------------
-
-.expstickybar {
-    position: fixed;
-    padding: 5px;
-    right: 0;
-    left: 0;
-    visibility: hidden;
-    z-index: 10000;
-    width: auto; 
 }
 
 // Post Footer
@@ -76,14 +49,7 @@
     @include background-image(linear-gradient(top,  #171818 0%,#0e0e0e 100%));
 }
 
-// Main Footer
-// -------------------------
-
-
-
 // Sub-Categories
 // -------------------------
-
-
-
+	
 	

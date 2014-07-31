@@ -1,0 +1,531 @@
+
+*****************
+****  INDEX  ****
+*****************
+
+_Susy Grid
+_Background Color Extend
+_Font Adjust
+_No Class
+_Transitions
+_Font-Face
+_Hover Underline Toggle
+_Link States
+_Color Contrasting (Background & Foreground)
+_Force Wrap
+_Image Replacement
+_Border Radius
+_My Conditional Stack
+_Vendor Prefix List
+
+------------------------------------------------- Global Settings
+
+_Headings Color
+_Headings Font Size
+_Placeholder Selector
+_Sprites
+
+------------------------------------------------- Darken & Lighten
+
+_Darken / Lighten
+
+------------------------------------------------- Layout
+
+_Horizontal List
+
+
+
+*****************
+*  END INDEX  ***
+*****************
+
+*************************************************
+==============================================
+*************************************************
+
+*** Susy Grid
+
+@include span-columns(6, 12);
+@include span-columns(6 omega, 12);
+
+*************************************************
+==============================================
+*************************************************
+
+*** Background Color Extend
+
+margin: 0 0 - $grid-padding; 
+padding: 0 $grid-padding;
+
+
+*************************************************
+==============================================
+*************************************************
+
+*** Font Adjust
+
+@include adjust-font-size-to(16px);
+
+@include leader();
+@include margin-leader();
+@include padding-leader();
+
+@include trailer();
+@include margin-trailer();
+@include padding-trailer();
+
+*************************************************
+==============================================
+*************************************************
+
+*** No Class Nesting
+
+.borderradius & {
+
+}
+
+.lt-ie9 & {
+
+}
+
+*************************************************
+==============================================
+*************************************************
+
+*** Transitions:
+
+@mixin transition {
+	@include transition-property(all);
+	@include transition-duration(0.5s);
+	@include transition-timing-function(ease-in);
+}
+
+a {
+    color: white:
+    @include transition;
+    
+    &hover {
+    	color: black;
+    }
+}
+
+	* The transition properties must be applied to the 
+	  the main state. This works great for txt links.
+	* I added the includes to a mixin to reduce the code 
+	  on the style sheets. Add the mixin to the base.
+    
+*************************************************
+==============================================
+*************************************************
+
+*** Font-Face:
+
+@include font-face('Comic', 
+  font-files(
+    'comic_zine_ot-webfont.woff', woff,
+    'comic_zine_ot-webfont.ttf', ttf,
+    'comic_zine_ot-webfont.svg', svg,
+    'comic_zine_ot-webfont.eot', eot)
+  ); 
+  
+@mixin myfont {
+	font-family: "Comic", sans-serif;
+}
+
+p {
+	@extend .myFont;
+}
+
+	* - First generate the font-face rule 
+	  - Then add the mixin to the base file. 
+	  - Finally, use the @extend to apply the 
+	    property to the css rule desired.
+	  
+	* Don't forget to add the configuration to the 
+	  config.rb file if needed.
+
+*************************************************
+==============================================
+*************************************************
+
+*** Hover Underline Toggle:
+
+@include hover-link;
+
+	* This mixin will toggle the underline on a link. 
+	  - Add it to the main state.
+
+*************************************************
+==============================================
+*************************************************
+
+*** Link States:
+
+Normal, Hover, Active, Visited, Focus:
+
+@include link-colors(yellow, blue, green, red, blue - 10);
+
+	* This generates the states in order.
+
+*************************************************
+==============================================
+*************************************************
+
+*** Color Contrasting:
+
+$myVariable: #f2efeb;
+
+div.myClass {
+	@include contrasted($myVariable);	
+}
+
+	* - Generate the color varable for the base
+	    color (background color).
+	  - Create the include using the variable as
+	    the argument.
+	  - Add the @include to the desired element.
+	* The argument will be added as the bg color
+	  and the text color will be automatically 
+	  generated. 
+	  
+*************************************************
+==============================================
+*************************************************
+
+*** Force Wrap
+
+@include force-wrap;
+
+	* Add this mixin to a div that has text 
+	  that needs to be force wrapped. A good
+	  example of use is when a link is pushing
+	  out the layout.
+
+*************************************************
+==============================================
+*************************************************
+
+*** Image Replacement
+
+.hide-me-element {
+	@include replace-text("images/some-image.png");
+	@include replace-text("images/some-image.png,0,0");
+	
+	@include replace-text-with-dimensions
+	
+	display: block;
+}
+
+	* - The first techniqe will replace the text 
+	    with an image. The numbers are optional and
+	    used if it were being taken from a sprite.
+	  - The second finds the size of the image.
+
+*************************************************
+==============================================
+*************************************************
+
+*** Border Radius
+
+  @include border-radius(25px);
+ 
+  @include border-top-left-radius(25px);
+ 
+  @include border-top-right-radius(25px);
+ 
+  @include border-bottom-left-radius(25px); 
+ 
+  @include border-bottom-right-radius(25px);
+
+  @include border-top-radius(25px);
+ 
+  @include border-bottom-radius(25px);
+ 
+  @include border-left-radius(25px); 
+ 
+  @include border-right-radius(25px); 
+ 
+  @include border-corner-radius(top, left, 40px);
+  @include border-corner-radius(top, right, 5px);
+  @include border-corner-radius(bottom, left, 15px);
+  @include border-corner-radius(bottom, right, 30px);
+
+
+*************************************************
+==============================================
+*************************************************
+
+*** My Conditional Stack
+
+	-   The conditional declaration must be the
+		root declaration and cannot exist as a
+		descendant.
+	
+	-	It must also be below the main styles and
+		can be used in media queries.		
+
+#ourJourney { 
+
+}
+
+.lt-ie9 #ourJourney {
+
+}
+
+@include respond-to(desktop) {
+
+	.lt-ie9 #ourJourney {
+		background-color: red;
+	}
+
+}
+
+*************************************************
+==============================================
+*************************************************
+
+------------------------------------------------- Global Settings
+
+*************************************************
+==============================================
+*************************************************
+
+*** Headings Color
+
+	-   This mixin sets the heading colors. It can
+		be done to include h1 thru h6 by declaring 
+		"all" as the argument or setting them
+		explicidly. 		
+
+#{ headings(all) } {
+	color: $darkFont;
+}
+
+	-   The argument means 2 to 6. You can do 3 to
+		6, or 1 to 4 as well. 
+		
+#{ headings(2,6) } {
+	color: $darkFont;
+}
+
+*************************************************
+==============================================
+*************************************************
+
+*** Headings Font Size
+
+	-   This mixin sets the heading font size. Add 
+		the mixin to the mixin section and call it 
+		in the styles with the arguments. 		
+
+@mixin setHeadingSize($from, $to, $baseSize, $subtractBy) {
+	
+	$currentNumber: $from;
+	$currentSize: $baseSize;
+	$to: $to;
+	
+	@while $currentNumber != $to {
+		
+		h#{ $currentNumber } {
+			font-size: $currentSize;
+		}
+		
+		$currentNumber: $currentNumber +1;
+		$currentSize: $currentSize - $subtractBy;
+	}
+}
+
+// Call
+
+@include setHeadingSize(1, 6, 26px, 2px);
+
+*************************************************
+==============================================
+*************************************************
+
+*** Placeholder Selector
+
+	-   This selector can be used to gather
+		classes or id's together that share the
+		same styles. The placeholder title is 
+		overridden by the class or id and is not 
+		seen in the output.
+
+// Declared
+
+%myPlaceholderName {
+
+}
+
+// Call
+
+@extend %myriadBold;
+
+
+===== EXAMPLE : 
+
+Placeholder Declared:
+
+%myriadBold {
+	font-family: 'MyriadPro-Bold', helvetica, arial, sans-serif;
+} 		
+
+// Called
+
+h1 {
+	@extend %myriadBold;
+}
+
+header {
+	@extend %myriadBold;
+}
+
+// Output
+
+h1, header {
+	font-family: 'MyriadPro-Bold', helvetica, arial, sans-serif;
+}
+
+*************************************************
+==============================================
+*************************************************
+
+*** Sprite
+
+	-   This includes the mixin to shorten the file
+		name, the settings and the call. 
+		
+@mixin spr($img) {
+	@include sprite-sprite($img);
+}
+
+$sprite-spacing: 5px;
+@import "sprite/*.png";
+
+@include spr("logo");
+
+*************************************************
+==============================================
+*************************************************
+
+------------------------------------------------- Darken & Lighten
+
+*************************************************
+==============================================
+*************************************************
+
+*** Darken / Lighten
+
+	-   These function accepts 2 arguments. The 
+		color color variable and the percentage 
+		value to change with.	
+
+darken($lightFont, 5%);
+
+lighten($bgColor, 2%);
+
+*************************************************
+==============================================
+*************************************************
+
+------------------------------------------------- Layout
+
+*************************************************
+==============================================
+*************************************************
+
+*** Horizontal List
+
+	-   Styles the horizontal list.	
+
+@include horizontal-list;
+
+*************************************************
+==============================================
+*************************************************
+
+*** Vendor Prefix List
+
+@include box-shadow(red 2px 2px 10px);
+@include box-sizing(border-box);
+
+
+*************************************************
+==============================================
+*************************************************
+
+*** Image URL
+
+	-   Gets image path.	
+
+background: image-url("bg-main.jpg") top center no-repeat;
+
+*************************************************
+==============================================
+*************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

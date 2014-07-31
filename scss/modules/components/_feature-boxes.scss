@@ -1,8 +1,32 @@
 // Feature Boxes ---------------------
 // -----------------------------------
 
-.feature-box-container {
+.icon-box {
+    position: relative;
+}
+
+.feature-box {
+    color: $base-light;
+    text-align: center;
+    
+    padding: 30px 35px;
 	
+	.icon {
+    	height: 10px;
+    	
+    	p {
+        	text-align: right;
+        	
+        	position: absolute;
+        	bottom: 0;
+            right: 0;
+            padding: 0 12px 12px 0;
+    	}
+    	
+    	i {
+        	font-size: 26px;
+    	}
+	}
 }
 
 // Sub-Categories
