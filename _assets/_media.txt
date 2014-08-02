@@ -1,3 +1,6 @@
+=============== Custom ================
+=======================================
+
 (max-width: 479px)
 /* max 479 */
 @include respond-to(handhelds) {
@@ -7,6 +10,12 @@
 (min-width: 480px)
 /* min 480 */
 @include respond-to(landscape) {
+
+}		/* ============= HERE ============= */
+
+(min-width: 640px)
+/* min 640 */
+@include respond-to(beyond) {
 
 }		/* ============= HERE ============= */
 
@@ -41,7 +50,56 @@
 }		/* ============= HERE ============= */
 
 
+=============== Breakpoint ============
+=======================================
 
+(max-width: 479px)
+/* max 479 */
+@include breakpoint($handhelds) {
+
+}		/* ============= HERE ============= */
+
+(min-width: 480px)
+/* min 480 */
+@include breakpoint($landscape) {
+
+}		/* ============= HERE ============= */
+
+(min-width: 640px)
+/* min 640 */
+@include breakpoint($beyond) {
+
+}		/* ============= HERE ============= */
+
+(min-width: 768px)
+/* min 768 */
+@include breakpoint($tablets) {
+
+}		/* ============= HERE ============= */
+
+(min-width: 960px)
+/* min 960 */
+@include breakpoint($desktop) {
+
+}		/* ============= HERE ============= */
+
+(min-width: 1220px)
+/* min 1220 */
+@include breakpoint($big) {
+
+}		/* ============= HERE ============= */
+
+(min-width: 1420px)
+/* min 1420 */
+@include breakpoint($giant) {
+
+}		/* ============= HERE ============= */
+
+***************************************
+
+@media (min-width: 350px) {
+	
+}		/* ============= HERE ============= */
 =============== Columns ===============
 =======================================
 

@@ -92,22 +92,8 @@ $susy: (
 	}
 }
 
-// Gallery (4 col)
-.gal-col-4 .column {
-	@include gallery(6 of 12);
-	
-	@include breakpoint($beyond) {
-		@include gallery(3 of 12);
-	}
-}
-
-
-
-
-
-
-
 // delete ==================
+/*
 .a {
 	background: red;
 }
@@ -126,7 +112,7 @@ $susy: (
 
 .col {
 	@include clearfix();
-}
+}*/
 // delete ==================
 
 

@@ -76,7 +76,7 @@ button {
 		margin-top: 20px;
 	}
 	
-	@include respond-to(desktop) {
+	@include breakpoint($desktop) {
 		
 		button {
 			margin-top: 0px;
@@ -121,7 +121,7 @@ button {
 		background: none;
 		@include border-radius(12px);
 		
-		@include respond-to(desktop) {
+		@include breakpoint($desktop) {
 			background: $base-blue;
 			border: solid 5px rgba(255,255,255,0.1);
 			background-clip: padding-box;
@@ -142,7 +142,7 @@ button {
 		color: $base-light;
 	}
 	
-	@include respond-to(desktop) {
+	@include breakpoint($desktop) {
 		
 		input {
 			border: none;

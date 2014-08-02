@@ -21,16 +21,6 @@
         display: none;
         position: relative;
         
-        .btn-expand-collapse {
-            background: image-url("footer-expand.png") no-repeat;
-            width: 69px;
-            height: 39px;
-            
-            position: absolute;
-            top: -50px;
-            right: 0px;
-        }
-        
         @include breakpoint($tablets) {
             display: inline-block;
             margin-top: 4px;
@@ -46,40 +36,54 @@
     padding: 24px 0;
 }
 
-// Home Footer
-// -------------------------
-
-.expstickybar {
-    position: fixed;
-    padding: 5px;
-    right: 0;
-    left: 0;
-    visibility: hidden;
-    z-index: 10000;
-    width: auto; 
+#expand-section {
+    padding: 0;
 }
 
 // Post Footer
 // -------------------------
 
 #post-footer {
-    position: fixed;
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
-}
-
-#post-footer {
     background-color: #171818;
     @include filter-gradient(#171818, #0e0e0e, vertical);
-    $experimental-support-for-svg: true;
-    @include background-image(linear-gradient(top,  #171818 0%,#0e0e0e 100%));
+    @include background-image(linear-gradient(top,  #171818 0%,#0e0e0e 100%));    
+    color: $base-gray-light;
+    text-align: center;
+    
+    padding: 2px;
 }
 
-// Main Footer
+// Home Footer
 // -------------------------
 
-
+@include breakpoint($desktop) {
+    
+    body.home {
+        
+        .expstickybar {
+            position: fixed;
+            padding: 5px;
+            right: 0;
+            left: 0;
+            visibility: hidden;
+            z-index: 10000;
+            width: auto; 
+        }
+        
+        #footer {
+            
+            .btn-expand-collapse {
+                background: image-url("footer-expand.png") no-repeat;
+                width: 69px;
+                height: 39px;
+                
+                position: absolute;
+                top: -50px;
+                right: 0px;
+            }
+        }
+    }
+}
 
 // Sub-Categories
 // -------------------------

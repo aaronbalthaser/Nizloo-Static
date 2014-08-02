@@ -1,0 +1,34 @@
+// Gallery ---------------------------
+// -----------------------------------
+
+// 4 Columns
+// -------------------------
+
+.gal-col-4 .column {
+	@include gallery(12 of 12);
+	margin-bottom: 5px;
+	float: none;
+}
+
+@include breakpoint($beyond) {
+
+    .gal-col-4 .column {
+        @include gallery(3 of 12);
+    }
+    
+    .gal-col-4 .column:nth-child(1),
+    .gal-col-4 .column:nth-child(2) {
+        margin-bottom: 5px;
+    }	
+}
+
+@include breakpoint($beyond) {
+    
+    .gal-col-4 .column:nth-child(1),
+    .gal-col-4 .column:nth-child(2) {
+        margin-bottom: 0;
+    }
+}
+
+// Sub-Categories
+// -------------------------

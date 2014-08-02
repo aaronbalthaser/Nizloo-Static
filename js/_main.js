@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
 		    button.mouseup(function(login) {
 		        box.toggle();
 		        button.toggleClass('active');
-		        console.log(this);
+		        //console.log(this);
 		    });
 		    
 		    form.mouseup(function() { 
@@ -37,9 +37,9 @@ jQuery(document).ready(function($) {
 		    var box1 = $('#registration-box');
 		    var form1 = $('#register-form');
 		    
-		    console.log(button1);
-		     console.log(box1);
-		      console.log(form1);
+		    //console.log(button1);
+		     //console.log(box1);
+		      //console.log(form1);
 		    
 		    button1.removeAttr('href');
 		    button1.mouseup(function(login) {
@@ -65,7 +65,7 @@ jQuery(document).ready(function($) {
 	})();
 
 	// ------------------------------------------------------------------------------ //
-	// Equalize the Heights of Elements. //
+	// Equalize the Heights of Elements //
 	// ------------------------------------------------------------------------------ //
 
 	(function() {
@@ -107,29 +107,40 @@ jQuery(document).ready(function($) {
 	})();
 	
 	// ------------------------------------------------------------------------------ //
-	// Expand & Collapse Footer
+	// Check Browser Size //
 	// ------------------------------------------------------------------------------ //
-	
-	(function() {
-    	
+    
+    (function() {
         
+        var $window = $(window);
         
+        function checkBrowserSize()
+		{
+			var windowSize = $window.width();
+			
+			if (windowSize > 960) {
+				
+			}
+		}
         
-    	
-	});
+        $(window).resize(function() {
+			checkBrowserSize();
+		});
+        
+    }());
+    
+    // ------------------------------------------------------------------------------ //
+	// Copyright //
+	// ------------------------------------------------------------------------------ //
+    
+    (function () {
+
+        var currentYear = (new Date).getFullYear();
+        $("#year").text(currentYear);
+
+    })();
 	
 });
-/*
-$(window).load(function() {
-
-});*/
-
-
-
-
-
-
-
 
 
 

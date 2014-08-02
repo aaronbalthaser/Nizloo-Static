@@ -2,8 +2,19 @@
 // -----------------------------------
 
 .search {
-	padding: 100px 0 100px 0;
+	padding: 20px 0 20px 0;
 }
+
+@include breakpoint($tablets) {
+
+}
+
+@include breakpoint($desktop) {
+
+    .search {
+    	padding: 100px 0 100px 0;
+    }
+}		
 
 // Sub-Categories
 // -------------------------
